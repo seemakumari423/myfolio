@@ -35,6 +35,7 @@ CSS Document * {
   width: 70px;
   height: auto;
   padding: 10px 0;
+  margin-left: 50px;
 }
 .main-menu ul {
   list-style: none;
@@ -57,7 +58,7 @@ CSS Document * {
 .main-menu ul li .nav-link:hover {
   border-bottom: 3px solid #ECCD19;
 }
-/*****************banner CSS start*********************/
+****************banner CSS start********************
 .seema-area.d-flex.align-items-center {
   min-height: 1000px;
 }
@@ -98,7 +99,7 @@ CSS Document * {
   left: 138px;
   top: 67px;
 }
-/**************************About Sections start**********************/
+*************************About Sections start*********************
 .grey-bg {
   background: #EEEEEE;
   position: relative;
@@ -182,7 +183,7 @@ CSS Document * {
 .btn {
   color: #fff;
 }
-/*********************Resume Section End********************/
+********************Resume Section End*******************
 .resume-section {
   padding: 80px 0px;
 }
@@ -294,7 +295,22 @@ h3.sub-heading {
   font-size: 14px;
   margin-top: 10px;
 }
-/**********************SKILL********************/
+.square-shape-resume {
+  position: relative
+}
+.square-shape-resume:before {
+  position: absolute;
+  content: "";
+  width: 250px;
+  height: 250px;
+  background-color: #DEE9EF;
+  border-radius: 20px;
+  transform: rotate(45deg);
+  z-index: -1;
+  left: 622px;
+  bottom: -170px;
+}
+*********************SKILL*******************
 .progress-area {
   width: 100%;
   margin-bottom: 60px;
@@ -327,14 +343,57 @@ h3.sub-heading {
   font-weight: 500;
   color: #000000;
 }
-/**********************MY PROJECTS********************/
+.square-shape-skill {
+  position: relative
+}
+.square-shape-skill:before {
+  position: absolute;
+  content: "";
+  width: 250px;
+  height: 250px;
+  background-color: #DEE9EF;
+  border-radius: 20px;
+  transform: rotate(45deg);
+  z-index: -1;
+  left: 50px;
+  bottom: -204px;
+}
+*********************MY PROJECTS*******************
+.square-shape-project {
+  position: relative
+}
+.square-shape-project:before {
+  position: absolute;
+  content: "";
+  width: 250px;
+  height: 250px;
+  background-color: #DEE9EF;
+  border-radius: 20px;
+  transform: rotate(45deg);
+  z-index: -1;
+  right: 150px;
+  bottom: -125px;
+}
 .myproject-area {
   padding: 80px 0px;
+}
+p.project-work {
+  padding-bottom: 10px;
+}
+.project-work a {
+  text-decoration: none;
+  padding: 0 15px;
+  color: #414141;
+  font-weight: 600;
+  padding-bottom: 40px;
+}
+.project-work a:hover {
+  color: #ECCD19;
 }
 .myproject-area h2 {
   font-size: 40px;
   font-weight: 700;
-  margin-bottom: 70px;
+  margin-bottom: 40px;
   color: #464646;
   position: relative;
 }
@@ -387,12 +446,26 @@ h3.sub-heading {
   color: #222222;
   margin: 20px 20px;
 }
-/*@media only screen and (max-width:990px) {
+@media only screen and (max-width:990px) {
   .box12 {
     margin-bottom: 20px
   }
-}*/
-/**********************CONTACT SECTION********************/
+}
+*********************CONTACT SECTION*******************
+.square-shape-contact {
+  position: relative
+}
+.square-shape-contact:before {
+  position: absolute;
+  content: "";
+  width: 250px;
+  height: 250px;
+  background-color: #DEE9EF;
+  border-radius: 20px;
+  transform: rotate(45deg);
+  left: 50px;
+  bottom: -125px;
+}
 .Contact-area {
   padding: 80px 0px;
 }
@@ -402,6 +475,7 @@ h3.sub-heading {
   margin-bottom: 80px;
   color: #464646;
   position: relative;
+  margin-top: 40px;
 }
 .Contact-area h2:before {
   content: "";
@@ -470,7 +544,7 @@ textarea.form-design {
   font-size: 15px;
   line-height: 23px;
 }
-/**********************FOOTER SECTION********************/
+*********************FOOTER SECTION*******************
 footer.footer-area.grey-bg.section-padding {
   padding-bottom: 1px;
 }
@@ -499,62 +573,11 @@ footer.footer-area.grey-bg.section-padding {
 .toggle-menu {
   display: none;
 }
-@media (min-width:768px) and (max-width:992px) {
-    .toggle-menu {
-    position: absolute;
-    top: 25px;
-    right: 22px;
-    font-size: 30px;
-    color: black;
-    display: block;
-  }
-  .header-area:before {
-    content: "";
-    background: #fff;
-    width: 100%;
-    height: 33px;
-    position: absolute;
-    transform: rotate(-1deg);
-    bottom: -15px;
-    z-index: 9999;
-    box-shadow: 0px 11px 13px -5px rgba(0, 0, 0, 0.1);
-  }
-  .main-menu {
-    display: none;
-    background-color: #BDD3E0;
-    border-radius: 0px 0px 20px 20px;
-    padding: 30px 0px 10px 0px;
-    margin: 0px -15px;
-  }
-  .main-menu ul {
-    list-style: none;
-    padding: 0px;
-  }
-  .main-menu ul li {
-    display: block;
-  }
-  .main-menu ul li .nav-link:hover {
-    border-bottom: none;
-    color: #fff;
-  }
-  .main-menu ul li .nav-link:hover {
-    border-bottom: 3px solid #ECCD19;
-    width: 20px;
-    margin: 0 auto;
-    display: block;
-  }
-  .main-menu ul li .nav-link {
-    padding: 10px 16px;
-    text-align: center;
-    color: #222;
-  }
-}
-
-@media (max-width:767px) {
+@media (min-width:575px) and (max-width:767px) {
   .toggle-menu {
     position: absolute;
     top: -80px;
-    right: 22px;
+    right: 70px;
     font-size: 30px;
     color: black;
     display: block;
@@ -590,14 +613,14 @@ footer.footer-area.grey-bg.section-padding {
   }
   .main-menu ul li .nav-link:hover {
     border-bottom: 3px solid #ECCD19;
-    width: 20px;
-    margin: 0 auto;
-    display: block;
   }
   .main-menu ul li .nav-link {
     padding: 10px 16px;
-    text-align: center;
     color: #222;
+    width: 75px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
   }
   .container {
     max-width: 100%;
@@ -610,6 +633,7 @@ footer.footer-area.grey-bg.section-padding {
     margin: 115px auto;
   }
   .seema-caption {
+    margin-left: 50px;
     min-height: 300px;
   }
   .seema-area .square-shape:before {
@@ -633,7 +657,299 @@ footer.footer-area.grey-bg.section-padding {
     padding-right: 0px;
     font-size: 16px;
   }
-  /*-------------------------start about-------------------------------*/
+  .seema-area.d-flex.align-items-center {
+    min-height: 550px;
+  }
+  .toggle-menu {
+    position: absolute;
+    top: -80px;
+    right: 70px;
+    font-size: 30px;
+    color: black;
+    display: block;
+  }
+  .header-area:before {
+    content: "";
+    background: #fff;
+    width: 100%;
+    height: 33px;
+    position: absolute;
+    transform: rotate(-1deg);
+    bottom: -15px;
+    z-index: 9999;
+    box-shadow: 0px 11px 13px -5px rgba(0, 0, 0, 0.1);
+  }
+  .main-menu {
+    display: none;
+    background-color: #BDD3E0;
+    border-radius: 0px 0px 20px 20px;
+    padding: 30px 0px 10px 0px;
+    margin: 0px -15px;
+  }
+  .main-menu ul {
+    list-style: none;
+    padding: 0px;
+  }
+  .main-menu ul li {
+    display: block;
+  }
+  .main-menu ul li .nav-link:hover {
+    border-bottom: none;
+    color: #fff;
+  }
+  .main-menu ul li .nav-link:hover {
+    border-bottom: 3px solid #ECCD19;
+    margin: 0 auto;
+    display: block;
+  }
+  .main-menu ul li .nav-link {
+    padding: 10px 16px;
+    text-align: center;
+    color: #222;
+    width: 75px;
+    margin: 0 auto;
+    display: block;
+  }
+  .seema-caption .seema-intro {
+    font-size: 16px;
+    font-weight: 700;
+    color: #ECCD19;
+    letter-spacing: 2px;
+  }
+  .seema-caption h1 {
+    font-size: 35px;
+    font-weight: 700;
+  }
+  .seema-caption h4 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #ECCD19;
+  }
+  .seema-area .seema-caption p {
+    margin-top: 25px;
+    padding-right: 0px;
+    font-size: 14px;
+  }
+  .about-area .about-pofile-pic img {
+    display: none;
+  }
+  .about-area .square-shape:before {
+    display: none
+  }
+  .about-area .about-heading h2 {
+    font-size: 20px;
+    font-weight: 700;
+    position: relative;
+  }
+  .about-area .about-heading h2:before {
+    width: 40px;
+  }
+  .about-area .about-heading h4 {
+    font-size: 16px;
+  }
+  .about-heading {
+    text-align: center;
+  }
+  .section-padding {
+    padding: 60px 0;
+  }
+  .seema-area.d-flex.align-items-center {
+    margin-bottom: -100px;
+  }
+   ----------------------Resume------------------------
+  .square-shape-resume {
+    position: relative
+  }
+  .square-shape-resume:before {
+    position: absolute;
+    content: "";
+    width: 150px;
+    height: 150px;
+    background-color: #DEE9EF;
+    border-radius: 20px;
+    transform: rotate(45deg);
+    z-index: -1;
+    left: 550px;
+    top: -250px;
+  }
+  .resume-section h2 {
+    font-size: 20px;
+  }
+  .resume-section h2:before {
+    width: 40px;
+  }
+  h3.sub-heading {
+    font-size: 18px;
+  }
+  .edu-page-1 {
+    height: auto;
+  }
+  .skill .sub-heading {
+    padding-left: 20px;
+  }
+  .square-shape-skill {
+    position: relative
+  }
+  .square-shape-skill:before {
+    position: absolute;
+    content: "";
+    width: 150px;
+    height: 150px;
+    background-color: #DEE9EF;
+    border-radius: 20px;
+    transform: rotate(45deg);
+    z-index: -1;
+    left: -50px;
+    top: 600px;
+  }
+  .square-shape-project {
+    position: relative;
+  }
+  .square-shape-project:before {
+    position: absolute;
+    content: "";
+    width: 150px;
+    height: 150px;
+    background-color: #DEE9EF;
+    border-radius: 20px;
+    transform: rotate(45deg);
+    z-index: -1;
+    left: 500px;
+    bottom: -70px;
+  }
+  -----------------------My Project--------------------------
+  .myproject-area h2 {
+    font-size: 20px;
+  }
+  .myproject-area h2:before {
+    width: 40px;
+  }
+  .box12 {
+    margin: 0px auto;
+    margin-bottom: 30px;
+  }
+  .box12:after {
+    display: none;
+  }
+  .box12:hover:after {
+    display: none;
+  }
+  .box12 img {
+    width: 100%;
+    height: auto;
+    margin: 0px auto;
+    padding: 0px auto;
+  }
+  .box12 .box-content {
+    display: none;
+  }
+   ----------------------contact----------------------
+  .Contact-area h2 {
+    font-size: 20px;
+  }
+  .Contact-area h2:before {
+    width: 40px;
+  }
+  .square-shape-contact {
+    position: relative;
+  }
+  .square-shape-contact:before {
+    position: absolute;
+    content: "";
+    width: 150px;
+    height: 150px;
+    background-color: #DEE9EF;
+    border-radius: 20px;
+    transform: rotate(45deg);
+    z-index: -1;
+    right: 600px;
+    bottom: -80px;
+  }
+}
+/*@media (min-width:768px) and (max-width:991px) {
+  .toggle-menu {
+    position: absolute;
+    top: -80px;
+    right: 70px;
+    font-size: 30px;
+    color: black;
+    display: block;
+  }
+  .header-area:before {
+    content: "";
+    background: #fff;
+    width: 100%;
+    height: 33px;
+    position: absolute;
+    transform: rotate(-1deg);
+    bottom: -15px;
+    z-index: 9999;
+    box-shadow: 0px 11px 13px -5px rgba(0, 0, 0, 0.1);
+  }
+  .main-menu {
+    display: none;
+    background-color: #BDD3E0;
+    border-radius: 0px 0px 20px 20px;
+    padding: 30px 0px 10px 0px;
+    margin: 0px -15px;
+  }
+  .main-menu ul {
+    list-style: none;
+    padding: 0px;
+  }
+  .main-menu ul li {
+    display: block;
+  }
+  .main-menu ul li .nav-link:hover {
+    border-bottom: none;
+    color: #fff;
+  }
+  .main-menu ul li .nav-link:hover {
+    border-bottom: 3px solid #ECCD19;
+  }
+  .main-menu ul li .nav-link {
+    padding: 10px 16px;
+    color: #222;
+    width: 75px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+  }
+  .container {
+    max-width: 100%;
+  }
+  .seema-img {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    margin: 115px auto;
+  }
+  .seema-caption {
+    margin-left: 50px;
+  }
+  .seema-area .square-shape:before {
+    display: none;
+  }
+  .seema-area {
+    min-height: 0 !important;
+    padding-top: 50px;
+  }
+  .seema-caption h1 {
+    font-size: 35px;
+    font-weight: 700;
+  }
+  .seema-caption h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ECCD19;
+  }
+  .seema-area .seema-caption p {
+    margin-top: 25px;
+    padding-right: 0px;
+    font-size: 16px;
+  }
+  -------------------------start about-------------------------------
   .about-area .square-shape:before {
     left: 0px;
     right: 0px;
@@ -643,7 +959,7 @@ footer.footer-area.grey-bg.section-padding {
     top: 10px;
   }
   .about-heading-sm h2 {
-    font-size: 32px;
+    font-size: 25px;
     font-weight: 700;
     display: block;
   }
@@ -655,6 +971,9 @@ footer.footer-area.grey-bg.section-padding {
     top: 142px;
     left: 46%;
     background-color: #ECCD19;
+  }
+  .about-details p {
+    padding: 0px 40px;
   }
   .about-heading-sm h4 {
     display: block;
@@ -669,7 +988,8 @@ footer.footer-area.grey-bg.section-padding {
     display: none;
   }
   .down-btn {
-    margin: 0px auto;
+    margin: 0px;
+    margin-bottom: 30px;
   }
   .btn {
     color: #fff;
@@ -694,7 +1014,7 @@ footer.footer-area.grey-bg.section-padding {
     text-align: center;
   }
   h3.sub-heading {
-    margin: 0 110px;
+    margin: 0 50px;
   }
   .skill-set {
     width: 70%;
@@ -706,9 +1026,10 @@ footer.footer-area.grey-bg.section-padding {
   .contact-left {
     margin: 0 auto;
     width: 70%;
+    margin-left: 0px;
   }
   .form-bg {
-    width: 70%;
+    width: 85%;
     margin: 0 auto;
   }
   .footer-area h4 {
@@ -721,5 +1042,86 @@ footer.footer-area.grey-bg.section-padding {
   }
   .footer-social i {
     font-size: 20px;
+  }
+  -------------------------Resume Section-------------------------------
+  .resume-section h2 {
+    font-size: 25px;
+  }
+  .square-shape-resume {
+    position: relative
+  }
+  .square-shape-resume:before {
+    position: absolute;
+    content: "";
+    width: 180px;
+    height: 180px;
+    background-color: #DEE9EF;
+    border-radius: 20px;
+    transform: rotate(45deg);
+    z-index: -1;
+    left: 525px;
+    bottom: -123px;
+  }
+  .square-shape-skill {
+    position: relative
+  }
+  .square-shape-skill:before {
+    position: absolute;
+    content: "";
+    width: 180px;
+    height: 180px;
+    background-color: #DEE9EF;
+    border-radius: 20px;
+    transform: rotate(45deg);
+    z-index: -1;
+    left: -56px;
+    top: 320px;
+  }
+  -------------------------My Pojects-------------------------------
+  .square-shape-project {
+    position: relative
+  }
+  .square-shape-project:before {
+    position: absolute;
+    content: "";
+    width: 180px;
+    height: 180px;
+    background-color: #DEE9EF;
+    border-radius: 20px;
+    transform: rotate(45deg);
+    z-index: -1;
+    left: 525px;
+    bottom: -92px;
+  }
+  .section-padding {
+    padding: 30px 50px;
+  }
+  .myproject-area h2 {
+    font-size: 25px;
+  }
+  -------------------------contact-------------------------------*/
+  .square-shape-contact {
+    position: relative
+  }
+  .square-shape-contact:before {
+    position: absolute;
+    content: "";
+    width: 180px;
+    height: 180px;
+    background-color: #DEE9EF;
+    border-radius: 20px;
+    transform: rotate(45deg);
+    z-index: -1;
+    bottom: -92px;
+    right: 525px;
+  }
+  .form-bg {
+    margin-right: 0px;
+  }
+  .send-btn {
+    width: 70%;
+  }
+  .Contact-area h2 {
+    font-size: 25px;
   }
 }
